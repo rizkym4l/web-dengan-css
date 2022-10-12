@@ -1,155 +1,232 @@
-body {
-    background-color: #dfcbb3;
-    color: #444444;
-    font-family: "Open Sans", Arial;
-    font-size: 17px;
-    padding: 15px;
-    margin: 0;
-  }
-  
-  .container {
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  h1 { text-align: center; }
-  
-  .navbar { 
-    text-align: center; 
-    margin-bottom: 25px;
-  }
-  
-  .list-nav {
-      padding: 0;
-      margin: 0; 
-  }
-  
-  .list-nav li {
-      display: inline-block;
-      list-style: none;
-      margin-left: 10px;
-      margin-right: 10px;
-  }
-  
-  .list-nav a { font-size: 20px; }
-  .list-nav li a.active { color: #444444; }
-  a:hover { color: #444444; }
-  
-  a { 
-    color: #996633; 
-    text-decoration:none;
-  }
-  
-  .content { 
-    background-color: #ffffff; 
-    border-radius: 10px;
-   
-  }
-  
-  .content-header{ margin-bottom: 0; }
-  
-  .content-text {
-     font-size: 20px;
-     margin: 0;
-  }
-  
-  #content-img {
-    background-image: url(img/header.jpg);
-    background-position: center;
-    background-size: cover;
-    min-height: 400px;
-    text-align: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  #content-img img {
-    max-width: 50%;
-    margin-bottom: -15px;
-  }
-  
-  .content1 {
-    padding: 15%;
-    font-size: 30px;
-  }
-  
-  .section {
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(wp4676574-4k-pc-wallpapers.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 8% 0 8%;
+  color: aliceblue;
 
-  }
+}
+.logo{
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span{
+  color: red;
+}
+
+nav ul li{   
+
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 24px;
+
+}
+nav ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: red;
+  transition: 1s;
+  font-size: larger;
+}
+.btn
+{
+  background: red;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.btn:hover{
+  transform: scale(1.5);
+  transition: 1s;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  color: aliceblue;
+  display: flex;
   
-  .section-small {
-    max-width: 490px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    text-align: center;
-  }
   
-  .section-header {
-    color: #996633;
-    text-align: center;
-    font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+}
+.content h4{
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: red;
+}
+.content h1{
+  font-size: 49px;
+}
+.content h3{
+  margin-top: 10px;
+}
+.content .ha{
+
+margin-left: 100px;
+margin-top: 50px;
+}
+.content img{
+  border-radius: 20px 20px 20px 20px;
+}
+.about{
+  width: 100%;
+  padding: 100px 0px;
+ background-color: #070707;
+  background-position: center;
+  background-size: cover;
+}
+.about img{
+  height: 400px;
+  width: 430px;
+  border-radius: 10px 10px 10px 10px;
+}
+.about-text{
+  width: 550px;
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: aliceblue;
+  padding-bottom: 100px;
+}
+.about-text h2{
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.about-text p{
+  width: 270px;
+}
+button{
+  background-color: red;
+  color: aliceblue;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 25px;
+}
+button:hover{
+  background-color: transparent;
+  transition: 1s;
+  border: 2px solid red;
+}
+.main .sekola img{
+  width: 150px;
+  height: 150px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.main h4{
+  margin-top: 15px;
+}
+
+.servis{
+  background-color: black;
+  background-image: url(wp4676574-4k-pc-wallpapers.jpg);
+  background-position: center;
+  background-size: cover;
   
-  hr {
-    width: 60%;
-    border: 0.5px solid #ccc;
-  }
+}
+.tittle h2{
+  font-size: 70px;
+  color: aliceblue;
+  text-align: center;
+ padding-top: 90px;
+  width: 1130px;
+  margin: auto;
+
+
+}
+.box{
+  display: flex;
+  justify-content: center;
+align-items: center;
+min-height: 700px;
+margin-top: 70px;}
+.card{
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background-color: #070707;
+  border-radius: 20px;
+  margin: 15px;
+ 
+  text-align: center;
+  color: aliceblue;
   
-  table {
-    width: 100%;
-    border-spacing: 0;
-    padding-bottom: 20px;
-  }
   
-  th {
-    color: #333333;
-    font-weight: 400;
-    font-size: 1.2rem;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  
-  td {
-    text-align: center;
-    padding: 10px 15px;
-  }
-  
-  .text-left { text-align: left; }
-  tr:nth-child(odd) { background-color: #eee5dc; }
-  
-  tr.tr-header {
-    background-color: #cfae8b;
-    height: 50px;
-  }
-  
-  .footer-text {
-    font-size: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .gallery{
+}
+.card i{
+  height: 100px;
+  width: 100px;
+  font-size: 70px;
+  color: red;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.button a{margin-top: 90px;}
+.kontak-saya{
+  background: black;
+  color: aliceblue;
+  font-size: 22px;
+}
+
+.footer .medsos a i{
+  font-size: 70px;
+  justify-content: space-between;
+  margin-left: 30px;
+  color: aliceblue;
+  width: max-content;
+  display: inline-block;
+}
+.footer{
+justify-content: space-between;
 display: flex;
+padding-top: 30px;
+align-items: center;}
+.tem img{
+  height: 400px;
+  width: 500px;
+  margin-left: 80px;
+padding-bottom: 60px;
+}
+.tem img:hover{
+  transition: 1s;
+  transform: scale(1.3
+  );
+}
+.video{
+  margin-left: 500px;
+  
 
-  }
-  .gallery img{
-    width: 240px;
-    height: 200px;
-    align-content: space-between;
-    
-  }
-  .content1 img{
-    border-radius: 20px;
-  }
-  .content img:hover{
-    transform: scale(2);
-    transition: 1s;
-  }
+}
+
+
+
+
